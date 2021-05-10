@@ -1,0 +1,39 @@
+file "$(TOP)/iocNameApp/Db/PTC10.db"
+{
+pattern
+{P,          T,   PORT,    ADDR}
+{iocName:,   tc1, PTC_ETH,    0}
+
+}
+
+file "$(TOP)/iocNameApp/Db/PTC10_tc_chan.db"
+{
+pattern
+{P,          T,   PORT,    ADDR,  C,     EGU,  PREC} 
+{iocName:,   tc1, PTC_ETH,    0,  2A,      C,  3} 
+#{iocName:,   tc1, PTC_ETH,    0,  TC,      C,  3} 
+{iocName:,   tc1, PTC_ETH,    0,  2B,      C,  3} 
+{iocName:,   tc1, PTC_ETH,    0,  2C,      C,  3} 
+{iocName:,   tc1, PTC_ETH,    0,  2D,      C,  3} 
+# {iocName:,   tc1, PTC_ETH,    0,  ColdJ2,  C,  3} 
+}
+
+file "$(TOP)/iocNameApp/Db/PTC10_rtd_chan.db"
+{
+pattern
+{P,          T,   PORT,    ADDR,  C,     EGU,  PREC} 
+{iocName:,   tc1, PTC_ETH,    0,  3A,      C,  3} 
+#{iocName:,   tc1, PTC_ETH,    0,  Out3,      C,  3} 
+# {iocName:,   tc1, PTC_ETH,    0,  3B,      C,  3} 
+}
+
+file "$(TOP)/iocNameApp/Db/PTC10_aio_chan.db"
+{
+pattern
+{P,          T,   PORT,    ADDR,   N,  C,   EGU,  PREC} 
+{iocName:,   tc1, PTC_ETH,    0,   1,  5A,    V,  3} 
+#{iocName:,   tc1, PTC_ETH,    0,   1,  Control,    V,  3} 
+{iocName:,   tc1, PTC_ETH,    0,   2,  5B,    V,  3} 
+{iocName:,   tc1, PTC_ETH,    0,   3,  5C,    V,  3} 
+# {iocName:,   tc1, PTC_ETH,    0,   4,  5D,    V,  3} 
+}
