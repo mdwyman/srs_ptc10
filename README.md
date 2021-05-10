@@ -16,7 +16,7 @@ Destination:	iocApp/Db/
 
 ### Startup file
 
--PTC10.cmd  --  Example of startup file needed for PTC10 and extra asyn support
+- PTC10.cmd  --  Example of startup file needed for PTC10 and extra asyn support
 
 Desitination:	iocBoot/ioc/substitutions/
 
